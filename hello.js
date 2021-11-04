@@ -14,15 +14,21 @@ app.get("/", (req, res) => {
 });
 
 app.get("/english", (req, res) => {
-  res.render("hello-world-english");
+  res.render("hello-world-english", {
+    currentLinkIsEnglish: "current",
+  });
 });
 
 app.get("/french", (req, res) => {
-  res.render("hello-world-french");
+  res.render("hello-world-french", {
+    currentLinkIsFrench: "current",
+  });
 });
 
 app.get("/serbian", (req, res) => {
-  res.render("hello-world-serbian");
+  res.render("hello-world-serbian", {
+    currentLinkIsSerbian: "current",
+  });
 });
 
 app.listen(PORT, "localhost", () => {

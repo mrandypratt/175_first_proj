@@ -9,7 +9,22 @@ html
 
   body
     nav
-      block navigation_links
+      ul
+        li
+          a(href="/english" class=currentLinkIsEnglish)
+            img.flag(src="/images/american_flag.png"
+                      alt="US Flag"
+                      title="Go to US English site")
+        li
+          a(href="/french" class=currentLinkIsFrench)
+            img.flag(src="/images/french_flag.png"
+                      alt="Drapeau de la france"
+                      title="Aller sur le site français")
+        li
+          a(href="/serbian" class=currentLinkIsSerbian)
+            img.flag(src="/images/serbian_flag.png"
+                      alt="Застава Србије"
+                      title="Идите на српски сајт")
 
     header
       block greeting

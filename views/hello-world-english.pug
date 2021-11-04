@@ -3,24 +3,6 @@ extends layout
 block page_title
   title This is the title of my page
 
-block navigation_links
-  ul
-    li
-      a.current(href="/english")
-        img.flag(src="/images/american_flag.png"
-                  alt="US Flag"
-                  title="Go to US English site")
-    li
-      a(href="/french")
-        img.flag(src="/images/french_flag.png"
-                  alt="Drapeau de la france"
-                  title="Aller sur le site français")
-    li
-      a(href="/serbian")
-        img.flag(src="/images/serbian_flag.png"
-                  alt="Застава Србије"
-                  title="Идите на српски сајт")
-
 block greeting
   header
     h1 Hello World!
